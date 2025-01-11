@@ -1,5 +1,5 @@
 # Usamos como punto de partida una máquina virtual con JDK 11 y Maven instalados
-FROM maven:3.8.6-jdk-11
+FROM maven:3.9.8-eclipse-temurin-21
 
 # Creamos una carpeta para el código fuente
 RUN mkdir -p /usr/src/asi-board
