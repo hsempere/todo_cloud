@@ -11,4 +11,4 @@ COPY . .
 RUN mvn clean package
 
 # Inicia el proyecto ejecutando el ficheor jar compilado
-CMD java -jar target/test-cloud-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CMD java -jar target/ExerciciTODO-0.0.1-SNAPSHOT-jar-with-dependencies.jar
