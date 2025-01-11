@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO website</title>
+</head>
+<body>
+	<div id="app">
+		<h1>{{ title }}</h1>
+		<ul>
+			<li v-for="todo in todos" :key="todo.id">
+				<span style="font-size:1.5em;">{{ todo.title }}</span> 
+				<span style="font-size:0.9em; margin-left: 5px;">[Editar][Eliminar]</span> 
+			</li>
+		</ul>
+		<form @submit.prevent="post">
+			<label for="titulo">Título:</label>
+			<input type="text" id="titulo" v-model="newtitle" required>
+			<button type="submit">Nuevo TODO</button>
+		</form>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="app.js"></script>
+
+</body>
+</html>
+
